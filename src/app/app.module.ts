@@ -1,8 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRouting } from './app.routing';
 import { AppPage } from './app.page';
+import { CoreModule } from './core/core.module'
 
 @NgModule({
   declarations: [
@@ -10,10 +10,10 @@ import { AppPage } from './app.page';
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    CoreModule
   ],
-  bootstrap: [
-    AppPage
-  ]
+  providers: [],
+  bootstrap: [AppPage]
 })
 export class AppModule { }
